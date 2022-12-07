@@ -17,15 +17,14 @@ struct FastGuide: View {
              HStack {
                 ForEach(FastGuideData) { item in
                    VStack {
-                      item.image
-                         .resizable()
-                         .scaledToFit()
-                         .frame(width: 30, height: 30)
-                         .padding()
-                         .background {
-                            Circle()
-                               .fill(item.color)
-                         }
+                      ZStack {
+                         Circle()
+                            .fill(item.color)
+                         item.image
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                      }
                       Text(item.text)
                          .multilineTextAlignment(.center)
                          .foregroundColor(.themeDarkGray)

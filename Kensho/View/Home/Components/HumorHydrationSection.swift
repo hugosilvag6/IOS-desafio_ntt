@@ -17,22 +17,25 @@ struct HumorHydrationContainer: View {
    let screen: CGFloat
    
    var body: some View {
-      VStack {
-         HStack {
+      ZStack {
+         RoundedRectangle(cornerRadius: 10)
+            .fill(.white)
+         RoundedRectangle(cornerRadius: 10)
+            .stroke(Color.themeLightGray)
+         VStack {
+            HStack {
+               Spacer()
+               title
+               Spacer()
+               titleIcon
+            }
             Spacer()
-            title
+            centerImage
             Spacer()
-            titleIcon
+            subtitle
          }
-         Spacer()
-         centerImage
-         Spacer()
-         subtitle
-      }
-      .padding()
-      .frame(width: screen * 0.43, height: screen * 0.43)
-      .background {
-         background
+         .padding()
+         .frame(width: screen * 0.43, height: screen * 0.43)
       }
    }
 }
@@ -78,13 +81,6 @@ extension HumorHydrationContainer {
       Text(type == .humor ? "Selecione o seu" : "0%")
          .foregroundColor(.themeDarkGray)
          .font(.system(size: 14))
-   }
-   var background: some View {
-      RoundedRectangle(cornerRadius: 10)
-         .stroke(.secondary)
-         .background {
-            Color.white.cornerRadius(10)
-         }
    }
 }
 

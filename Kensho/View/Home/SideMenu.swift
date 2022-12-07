@@ -14,26 +14,26 @@ struct SideMenu: View {
    var width: CGFloat
    
    var body: some View {
-      VStack (alignment: .leading, spacing: 0) {
-         VStack(alignment: .leading, spacing: 15) {
-            ScrollView (showsIndicators: false) {
-               header
-               minhaSaude
-               regularItem(image: Image("MeusDevices"), text: "Meus Devices")
-               regularItem(image: Image("DicasDeSaude"), text: "Dicas de Saúde")
-               regularItem(image: Image("chatIcon"), text: "Chat")
-               regularItem(image: Image("Smartwatch"), text: "Smartwatch")
-               regularItem(image: Image(""), text: "Anura")
-               regularItem(image: Image("Configuracoes"), text: "Configurações")
-               regularItem(image: Image("Sair"), text: "Sair")
-            }
-         }
-         .padding(.horizontal)
-      }
-      .frame(width: width)
-      .background {
+      ZStack {
          Color.themeGreen
             .edgesIgnoringSafeArea(.vertical)
+         VStack (alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading, spacing: 15) {
+                  ScrollView (showsIndicators: false) {
+                     header
+                     minhaSaude
+                     regularItem(image: Image("MeusDevices"), text: "Meus Devices")
+                     regularItem(image: Image("DicasDeSaude"), text: "Dicas de Saúde")
+                     regularItem(image: Image("chatIcon"), text: "Chat")
+                     regularItem(image: Image("Smartwatch"), text: "Smartwatch")
+                     regularItem(image: Image(""), text: "Anura")
+                     regularItem(image: Image("Configuracoes"), text: "Configurações")
+                     regularItem(image: Image("Sair"), text: "Sair")
+                  }
+            }
+            .padding(.horizontal)
+         }
+         .frame(width: width)
       }
    }
 }
