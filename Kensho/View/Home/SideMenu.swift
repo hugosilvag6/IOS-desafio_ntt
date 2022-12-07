@@ -96,10 +96,14 @@ extension SideMenu {
          .padding(.trailing)
          if showMinhaSaude {
             VStack (alignment: .leading, spacing: 10) {
-               Text("Consultas")
-               Text("Exames")
-               Text("Medicamentos")
-               Text("Medições")
+               ForEach(0..<4) { _ in
+                  NavigationLink {
+                     VCFromSideMenuRepresentable()
+                        .navigationBarHidden(false)
+                  } label: {
+                     Text("Push UIViewController")
+                  }
+               }
             }
             .padding(.leading, 30)
             .foregroundColor(.white)
@@ -115,5 +119,16 @@ extension SideMenu {
 struct SideMenu_Previews: PreviewProvider {
    static var previews: some View {
       SideMenu(showMenu: .constant(true), width: 290)
+   }
+}
+
+
+struct VCFromSideMenuRepresentable: UIViewControllerRepresentable {
+   func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+      
+   }
+   
+   func makeUIViewController(context: Context) -> some UIViewController {
+      return VCFromSideMenu()
    }
 }
