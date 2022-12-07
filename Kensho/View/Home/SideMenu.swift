@@ -93,9 +93,6 @@ extension SideMenu {
                   .font(.system(size: 18, weight: .bold))
             }
          }
-         .background {
-            Color.red
-         }
          .padding(.trailing)
          if showMinhaSaude {
             VStack (alignment: .leading, spacing: 10) {

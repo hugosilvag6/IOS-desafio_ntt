@@ -120,9 +120,9 @@
 		C1BCF0C1293FD25F0039AC64 /* Kensho */ = {
 			isa = PBXGroup;
 			children = (
-				C1BCF0FA293FEF4E0039AC64 /* Core */,
-				C1BCF0C2293FD25F0039AC64 /* KenshoApp.swift */,
 				C1BCF0C6293FD25F0039AC64 /* Assets.xcassets */,
+				C1BCF0C2293FD25F0039AC64 /* KenshoApp.swift */,
+				C1BCF0FA293FEF4E0039AC64 /* Core */,
 				C1BCF0C8293FD25F0039AC64 /* Preview Content */,
 				C1BCF0EE293FD2DE0039AC64 /* ViewModel */,
 				C1BCF0ED293FD2DB0039AC64 /* View */,
@@ -159,9 +159,7 @@
 		C1BCF0EC293FD2D30039AC64 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C1BCF0FE293FF28E0039AC64 /* FastGuideModel.swift */,
-				C1BCF102293FF7020039AC64 /* HealthTipsModel.swift */,
-				C1BCF108293FFD5B0039AC64 /* HomeRemindersModel.swift */,
+				C1BCF10E294027AE0039AC64 /* Home */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +218,16 @@
 				C1BCF10C294011D60039AC64 /* View+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1BCF10E294027AE0039AC64 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1BCF0FE293FF28E0039AC64 /* FastGuideModel.swift */,
+				C1BCF102293FF7020039AC64 /* HealthTipsModel.swift */,
+				C1BCF108293FFD5B0039AC64 /* HomeRemindersModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
