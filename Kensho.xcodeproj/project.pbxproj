@@ -8,12 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		C1BCF0C3293FD25F0039AC64 /* KenshoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0C2293FD25F0039AC64 /* KenshoApp.swift */; };
-		C1BCF0C5293FD25F0039AC64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0C4293FD25F0039AC64 /* ContentView.swift */; };
+		C1BCF0C5293FD25F0039AC64 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0C4293FD25F0039AC64 /* HomeView.swift */; };
 		C1BCF0C7293FD25F0039AC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BCF0C6293FD25F0039AC64 /* Assets.xcassets */; };
 		C1BCF0CA293FD25F0039AC64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BCF0C9293FD25F0039AC64 /* Preview Assets.xcassets */; };
 		C1BCF0D4293FD25F0039AC64 /* KenshoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0D3293FD25F0039AC64 /* KenshoTests.swift */; };
 		C1BCF0DE293FD25F0039AC64 /* KenshoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0DD293FD25F0039AC64 /* KenshoUITests.swift */; };
 		C1BCF0E0293FD25F0039AC64 /* KenshoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0DF293FD25F0039AC64 /* KenshoUITestsLaunchTests.swift */; };
+		C1BCF0F3293FD7EE0039AC64 /* HomeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0F2293FD7EE0039AC64 /* HomeBackground.swift */; };
+		C1BCF0F5293FDC270039AC64 /* HeaderMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0F4293FDC270039AC64 /* HeaderMenu.swift */; };
+		C1BCF0F7293FE0A20039AC64 /* HumorHydrationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0F6293FE0A20039AC64 /* HumorHydrationSection.swift */; };
+		C1BCF0F9293FED590039AC64 /* LastMeasurements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0F8293FED590039AC64 /* LastMeasurements.swift */; };
+		C1BCF0FD293FEF5E0039AC64 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0FC293FEF5E0039AC64 /* Color+.swift */; };
+		C1BCF0FF293FF28E0039AC64 /* FastGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0FE293FF28E0039AC64 /* FastGuideModel.swift */; };
+		C1BCF101293FF50D0039AC64 /* FastGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF100293FF50D0039AC64 /* FastGuide.swift */; };
+		C1BCF103293FF7020039AC64 /* HealthTipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF102293FF7020039AC64 /* HealthTipsModel.swift */; };
+		C1BCF105293FF82D0039AC64 /* HealthTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF104293FF82D0039AC64 /* HealthTips.swift */; };
+		C1BCF107293FFC850039AC64 /* HomeReminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF106293FFC850039AC64 /* HomeReminders.swift */; };
+		C1BCF109293FFD5B0039AC64 /* HomeRemindersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF108293FFD5B0039AC64 /* HomeRemindersModel.swift */; };
+		C1BCF10B294010FF0039AC64 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF10A294010FF0039AC64 /* SideMenu.swift */; };
+		C1BCF10D294011D60039AC64 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF10C294011D60039AC64 /* View+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +49,7 @@
 /* Begin PBXFileReference section */
 		C1BCF0BF293FD25F0039AC64 /* Kensho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kensho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BCF0C2293FD25F0039AC64 /* KenshoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshoApp.swift; sourceTree = "<group>"; };
-		C1BCF0C4293FD25F0039AC64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C1BCF0C4293FD25F0039AC64 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C1BCF0C6293FD25F0039AC64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1BCF0C9293FD25F0039AC64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1BCF0CF293FD25F0039AC64 /* KenshoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenshoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +57,19 @@
 		C1BCF0D9293FD25F0039AC64 /* KenshoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KenshoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BCF0DD293FD25F0039AC64 /* KenshoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshoUITests.swift; sourceTree = "<group>"; };
 		C1BCF0DF293FD25F0039AC64 /* KenshoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1BCF0F2293FD7EE0039AC64 /* HomeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBackground.swift; sourceTree = "<group>"; };
+		C1BCF0F4293FDC270039AC64 /* HeaderMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMenu.swift; sourceTree = "<group>"; };
+		C1BCF0F6293FE0A20039AC64 /* HumorHydrationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumorHydrationSection.swift; sourceTree = "<group>"; };
+		C1BCF0F8293FED590039AC64 /* LastMeasurements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMeasurements.swift; sourceTree = "<group>"; };
+		C1BCF0FC293FEF5E0039AC64 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		C1BCF0FE293FF28E0039AC64 /* FastGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastGuideModel.swift; sourceTree = "<group>"; };
+		C1BCF100293FF50D0039AC64 /* FastGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastGuide.swift; sourceTree = "<group>"; };
+		C1BCF102293FF7020039AC64 /* HealthTipsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTipsModel.swift; sourceTree = "<group>"; };
+		C1BCF104293FF82D0039AC64 /* HealthTips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthTips.swift; sourceTree = "<group>"; };
+		C1BCF106293FFC850039AC64 /* HomeReminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReminders.swift; sourceTree = "<group>"; };
+		C1BCF108293FFD5B0039AC64 /* HomeRemindersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemindersModel.swift; sourceTree = "<group>"; };
+		C1BCF10A294010FF0039AC64 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		C1BCF10C294011D60039AC64 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +120,13 @@
 		C1BCF0C1293FD25F0039AC64 /* Kensho */ = {
 			isa = PBXGroup;
 			children = (
+				C1BCF0FA293FEF4E0039AC64 /* Core */,
 				C1BCF0C2293FD25F0039AC64 /* KenshoApp.swift */,
-				C1BCF0C4293FD25F0039AC64 /* ContentView.swift */,
 				C1BCF0C6293FD25F0039AC64 /* Assets.xcassets */,
 				C1BCF0C8293FD25F0039AC64 /* Preview Content */,
+				C1BCF0EE293FD2DE0039AC64 /* ViewModel */,
+				C1BCF0ED293FD2DB0039AC64 /* View */,
+				C1BCF0EC293FD2D30039AC64 /* Model */,
 			);
 			path = Kensho;
 			sourceTree = "<group>";
@@ -125,6 +154,72 @@
 				C1BCF0DF293FD25F0039AC64 /* KenshoUITestsLaunchTests.swift */,
 			);
 			path = KenshoUITests;
+			sourceTree = "<group>";
+		};
+		C1BCF0EC293FD2D30039AC64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1BCF0FE293FF28E0039AC64 /* FastGuideModel.swift */,
+				C1BCF102293FF7020039AC64 /* HealthTipsModel.swift */,
+				C1BCF108293FFD5B0039AC64 /* HomeRemindersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C1BCF0ED293FD2DB0039AC64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1BCF0F0293FD7DA0039AC64 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1BCF0EE293FD2DE0039AC64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C1BCF0F0293FD7DA0039AC64 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1BCF0F1293FD7E00039AC64 /* Components */,
+				C1BCF0C4293FD25F0039AC64 /* HomeView.swift */,
+				C1BCF10A294010FF0039AC64 /* SideMenu.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1BCF0F1293FD7E00039AC64 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C1BCF0F2293FD7EE0039AC64 /* HomeBackground.swift */,
+				C1BCF0F4293FDC270039AC64 /* HeaderMenu.swift */,
+				C1BCF0F6293FE0A20039AC64 /* HumorHydrationSection.swift */,
+				C1BCF0F8293FED590039AC64 /* LastMeasurements.swift */,
+				C1BCF100293FF50D0039AC64 /* FastGuide.swift */,
+				C1BCF104293FF82D0039AC64 /* HealthTips.swift */,
+				C1BCF106293FFC850039AC64 /* HomeReminders.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C1BCF0FA293FEF4E0039AC64 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C1BCF0FB293FEF530039AC64 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C1BCF0FB293FEF530039AC64 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C1BCF0FC293FEF5E0039AC64 /* Color+.swift */,
+				C1BCF10C294011D60039AC64 /* View+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +352,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1BCF0C5293FD25F0039AC64 /* ContentView.swift in Sources */,
+				C1BCF109293FFD5B0039AC64 /* HomeRemindersModel.swift in Sources */,
+				C1BCF107293FFC850039AC64 /* HomeReminders.swift in Sources */,
+				C1BCF0FD293FEF5E0039AC64 /* Color+.swift in Sources */,
+				C1BCF10B294010FF0039AC64 /* SideMenu.swift in Sources */,
+				C1BCF0F3293FD7EE0039AC64 /* HomeBackground.swift in Sources */,
+				C1BCF105293FF82D0039AC64 /* HealthTips.swift in Sources */,
+				C1BCF0F5293FDC270039AC64 /* HeaderMenu.swift in Sources */,
+				C1BCF0F7293FE0A20039AC64 /* HumorHydrationSection.swift in Sources */,
+				C1BCF0FF293FF28E0039AC64 /* FastGuideModel.swift in Sources */,
+				C1BCF0C5293FD25F0039AC64 /* HomeView.swift in Sources */,
+				C1BCF101293FF50D0039AC64 /* FastGuide.swift in Sources */,
+				C1BCF103293FF7020039AC64 /* HealthTipsModel.swift in Sources */,
+				C1BCF0F9293FED590039AC64 /* LastMeasurements.swift in Sources */,
+				C1BCF10D294011D60039AC64 /* View+.swift in Sources */,
 				C1BCF0C3293FD25F0039AC64 /* KenshoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
