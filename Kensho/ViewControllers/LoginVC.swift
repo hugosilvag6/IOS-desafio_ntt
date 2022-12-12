@@ -13,7 +13,7 @@ class LoginVC: UIViewController {
    
    // MARK: - Properties
    @ObservedObject var viewModel = ViewModel()
-   var onLogin: (() -> Void)?
+   var onLogin: ((String) -> Void)?
    
    private lazy var infoLabel: UILabel = {
       let lb = UILabel()
@@ -53,7 +53,8 @@ class LoginVC: UIViewController {
    
    // MARK: - Selectors
    @objc func handleNavigation() {
-      self.onLogin?()
+      guard let name = nameTextField.text else { return }
+      self.onLogin?(name)
    }
    
    // MARK: - Helpers

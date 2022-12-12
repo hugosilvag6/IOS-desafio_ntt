@@ -15,8 +15,8 @@ class HomeCoordinator {
       self.navigationController = navigationController
    }
    
-   func start() {
-      let view = HomeView(onSideViewCode: goToSideViewCode, onSideSwiftUI: goToSideSwiftUI)
+   func start(name: String) {
+      let view = HomeView(name: name, onSideViewCode: goToSideViewCode, onSideSwiftUI: goToSideSwiftUI)
       let vc = UIHostingController(rootView: view)
       self.navigationController.pushViewController(vc, animated: true)
    }

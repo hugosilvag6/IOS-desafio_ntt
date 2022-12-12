@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
    
    @State var showMenu = false
+   var name: String
    var onSideViewCode: (() -> Void)
    var onSideSwiftUI: (() -> Void)
    
@@ -23,7 +24,7 @@ struct HomeView: View {
                }
                ScrollView(showsIndicators: false) {
                      VStack (spacing: 25) {
-                        HeaderMenu(name: "Karina", showMenu: $showMenu)
+                        HeaderMenu(name: name, showMenu: $showMenu)
                         HStack {
                            HumorHydrationContainer(type: .humor, screen: geometry.size.width)
                            Spacer()
@@ -91,6 +92,6 @@ extension HomeView {
 
 struct HomeView_Previews: PreviewProvider {
    static var previews: some View {
-      HomeView(onSideViewCode: {}, onSideSwiftUI: {})
+      HomeView(name: "Karina", onSideViewCode: {}, onSideSwiftUI: {})
    }
 }

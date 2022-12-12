@@ -17,14 +17,14 @@ class LoginCoordinator {
    
    func start() {
       let viewController = LoginVC()
-      viewController.onLogin = {
-         self.goToHome()
+      viewController.onLogin = { name in
+         self.goToHome(name: name)
       }
       self.navigationController.pushViewController(viewController, animated: true)
    }
    
-   private func goToHome (){
+   private func goToHome(name: String){
       let coordinator = HomeCoordinator(navigationController: self.navigationController)
-      coordinator.start()
+      coordinator.start(name: name)
    }
 }
