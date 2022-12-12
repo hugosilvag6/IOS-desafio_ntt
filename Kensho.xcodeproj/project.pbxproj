@@ -10,7 +10,12 @@
 		C1699F85294130CA00F65AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1699F84294130CA00F65AF7 /* AppDelegate.swift */; };
 		C1699F872941312B00F65AF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1699F862941312B00F65AF7 /* SceneDelegate.swift */; };
 		C1699F892941313A00F65AF7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1699F882941313A00F65AF7 /* LoginVC.swift */; };
-		C1699F8C294135A900F65AF7 /* VCFromSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1699F8B294135A900F65AF7 /* VCFromSideMenu.swift */; };
+		C1699F8C294135A900F65AF7 /* SideViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1699F8B294135A900F65AF7 /* SideViewCode.swift */; };
+		C191B59D29478EA70093415B /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191B59C29478EA70093415B /* LoginCoordinator.swift */; };
+		C191B59F294791C80093415B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191B59E294791C80093415B /* HomeCoordinator.swift */; };
+		C191B5A2294793110093415B /* SideSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191B5A1294793110093415B /* SideSwiftUI.swift */; };
+		C191B5A4294795E50093415B /* SideViewCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191B5A3294795E50093415B /* SideViewCodeCoordinator.swift */; };
+		C191B5A6294795EC0093415B /* SideSwiftUICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191B5A5294795EC0093415B /* SideSwiftUICoordinator.swift */; };
 		C1BCF0C3293FD25F0039AC64 /* KenshoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0C2293FD25F0039AC64 /* KenshoApp.swift */; };
 		C1BCF0C5293FD25F0039AC64 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BCF0C4293FD25F0039AC64 /* HomeView.swift */; };
 		C1BCF0C7293FD25F0039AC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1BCF0C6293FD25F0039AC64 /* Assets.xcassets */; };
@@ -54,7 +59,12 @@
 		C1699F84294130CA00F65AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1699F862941312B00F65AF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C1699F882941313A00F65AF7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		C1699F8B294135A900F65AF7 /* VCFromSideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCFromSideMenu.swift; sourceTree = "<group>"; };
+		C1699F8B294135A900F65AF7 /* SideViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewCode.swift; sourceTree = "<group>"; };
+		C191B59C29478EA70093415B /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		C191B59E294791C80093415B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		C191B5A1294793110093415B /* SideSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideSwiftUI.swift; sourceTree = "<group>"; };
+		C191B5A3294795E50093415B /* SideViewCodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewCodeCoordinator.swift; sourceTree = "<group>"; };
+		C191B5A5294795EC0093415B /* SideSwiftUICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideSwiftUICoordinator.swift; sourceTree = "<group>"; };
 		C1BCF0BF293FD25F0039AC64 /* Kensho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kensho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BCF0C2293FD25F0039AC64 /* KenshoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KenshoApp.swift; sourceTree = "<group>"; };
 		C1BCF0C4293FD25F0039AC64 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -109,9 +119,28 @@
 			isa = PBXGroup;
 			children = (
 				C1699F882941313A00F65AF7 /* LoginVC.swift */,
-				C1699F8B294135A900F65AF7 /* VCFromSideMenu.swift */,
+				C1699F8B294135A900F65AF7 /* SideViewCode.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C191B59B29478E660093415B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C191B59C29478EA70093415B /* LoginCoordinator.swift */,
+				C191B59E294791C80093415B /* HomeCoordinator.swift */,
+				C191B5A3294795E50093415B /* SideViewCodeCoordinator.swift */,
+				C191B5A5294795EC0093415B /* SideSwiftUICoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C191B5A0294793070093415B /* SideSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				C191B5A1294793110093415B /* SideSwiftUI.swift */,
+			);
+			path = SideSwiftUI;
 			sourceTree = "<group>";
 		};
 		C1BCF0B6293FD25E0039AC64 = {
@@ -145,6 +174,7 @@
 				C1BCF0C8293FD25F0039AC64 /* Preview Content */,
 				C1BCF0EE293FD2DE0039AC64 /* ViewModel */,
 				C1BCF0ED293FD2DB0039AC64 /* View */,
+				C191B59B29478E660093415B /* Coordinator */,
 				C1BCF0EC293FD2D30039AC64 /* Model */,
 				C1699F8A2941314600F65AF7 /* ViewControllers */,
 			);
@@ -187,6 +217,7 @@
 		C1BCF0ED293FD2DB0039AC64 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C191B5A0294793070093415B /* SideSwiftUI */,
 				C1BCF0F0293FD7DA0039AC64 /* Home */,
 			);
 			path = View;
@@ -381,9 +412,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1BCF109293FFD5B0039AC64 /* HomeRemindersModel.swift in Sources */,
-				C1699F8C294135A900F65AF7 /* VCFromSideMenu.swift in Sources */,
+				C1699F8C294135A900F65AF7 /* SideViewCode.swift in Sources */,
+				C191B5A4294795E50093415B /* SideViewCodeCoordinator.swift in Sources */,
+				C191B5A6294795EC0093415B /* SideSwiftUICoordinator.swift in Sources */,
+				C191B59D29478EA70093415B /* LoginCoordinator.swift in Sources */,
 				C1BCF107293FFC850039AC64 /* HomeReminders.swift in Sources */,
 				C1BCF0FD293FEF5E0039AC64 /* Color+.swift in Sources */,
+				C191B59F294791C80093415B /* HomeCoordinator.swift in Sources */,
 				C1BCF10B294010FF0039AC64 /* SideMenu.swift in Sources */,
 				C1BCF0F3293FD7EE0039AC64 /* HomeBackground.swift in Sources */,
 				C1BCF105293FF82D0039AC64 /* HealthTips.swift in Sources */,
@@ -392,6 +427,7 @@
 				C1BCF0F7293FE0A20039AC64 /* HumorHydrationSection.swift in Sources */,
 				C1699F85294130CA00F65AF7 /* AppDelegate.swift in Sources */,
 				C1BCF0FF293FF28E0039AC64 /* FastGuideModel.swift in Sources */,
+				C191B5A2294793110093415B /* SideSwiftUI.swift in Sources */,
 				C1BCF0C5293FD25F0039AC64 /* HomeView.swift in Sources */,
 				C1BCF101293FF50D0039AC64 /* FastGuide.swift in Sources */,
 				C1BCF103293FF7020039AC64 /* HealthTipsModel.swift in Sources */,

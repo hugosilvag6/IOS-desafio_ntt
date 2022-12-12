@@ -10,7 +10,8 @@ import SwiftUI
 struct HomeView: View {
    
    @State var showMenu = false
-   var name: String
+   var onSideViewCode: (() -> Void)
+   var onSideSwiftUI: (() -> Void)
    
    var body: some View {
       GeometryReader { geometry in
@@ -18,11 +19,11 @@ struct HomeView: View {
             HomeBackground(screen: geometry.size.width)
             HStack (spacing: 0) {
                if showMenu {
-                  SideMenu(showMenu: $showMenu, width: geometry.size.width * 0.8)
+                  SideMenu(showMenu: $showMenu, width: geometry.size.width * 0.8, onSideViewCode: onSideViewCode, onSideSwiftUI: onSideSwiftUI)
                }
                ScrollView(showsIndicators: false) {
                      VStack (spacing: 25) {
-                        HeaderMenu(name: name, showMenu: $showMenu)
+                        HeaderMenu(name: "Karina", showMenu: $showMenu)
                         HStack {
                            HumorHydrationContainer(type: .humor, screen: geometry.size.width)
                            Spacer()
@@ -90,6 +91,6 @@ extension HomeView {
 
 struct HomeView_Previews: PreviewProvider {
    static var previews: some View {
-      HomeView(name: "Karina")
+      HomeView(onSideViewCode: {}, onSideSwiftUI: {})
    }
 }

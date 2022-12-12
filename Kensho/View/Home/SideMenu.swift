@@ -12,6 +12,8 @@ struct SideMenu: View {
    @Binding var showMenu: Bool
    @State var showMinhaSaude = false
    var width: CGFloat
+   var onSideViewCode: (() -> Void)
+   var onSideSwiftUI: (() -> Void)
    
    var body: some View {
       ZStack {
@@ -96,13 +98,33 @@ extension SideMenu {
          .padding(.trailing)
          if showMinhaSaude {
             VStack (alignment: .leading, spacing: 10) {
-               ForEach(0..<4) { _ in
-                  NavigationLink {
-                     VCFromSideMenuRepresentable()
-                        .navigationBarHidden(false)
-                  } label: {
-                     Text("Push UIViewController")
-                  }
+//               ForEach(0..<4) { _ in
+//                  NavigationLink {
+//                     VCFromSideMenuRepresentable()
+//                        .navigationBarHidden(false)
+//                  } label: {
+//                     Text("Push UIViewController")
+//                  }
+//               }
+               Button {
+                  self.onSideViewCode()
+               } label: {
+                  Text("Push UIViewController")
+               }
+               Button {
+                  self.onSideSwiftUI()
+               } label: {
+                  Text("Push SwiftUI")
+               }
+               Button {
+                  print("Teste")
+               } label: {
+                  Text("Item 3")
+               }
+               Button {
+                  print("Teste")
+               } label: {
+                  Text("Item 4")
                }
             }
             .padding(.leading, 30)
@@ -118,17 +140,15 @@ extension SideMenu {
 
 struct SideMenu_Previews: PreviewProvider {
    static var previews: some View {
-      SideMenu(showMenu: .constant(true), width: 290)
+      SideMenu(showMenu: .constant(true), width: 290, onSideViewCode: {}, onSideSwiftUI: {})
    }
 }
 
 
 struct VCFromSideMenuRepresentable: UIViewControllerRepresentable {
-   func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-      
-   }
+   func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
    
    func makeUIViewController(context: Context) -> some UIViewController {
-      return VCFromSideMenu()
+      return SideViewCode()
    }
 }
